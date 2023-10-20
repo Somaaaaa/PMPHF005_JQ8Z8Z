@@ -1,0 +1,8 @@
+C:\Users\rille\source\repos\PMPHF005_JQ8Z8Z\PMPHF005_JQ8Z8Z\bin\Debug\PMPHF005_JQ8Z8Z.exe.config
+C:\Users\rille\source\repos\PMPHF005_JQ8Z8Z\PMPHF005_JQ8Z8Z\bin\Debug\PMPHF005_JQ8Z8Z.exe
+C:\Users\rille\source\repos\PMPHF005_JQ8Z8Z\PMPHF005_JQ8Z8Z\bin\Debug\PMPHF005_JQ8Z8Z.pdb
+C:\Users\rille\source\repos\PMPHF005_JQ8Z8Z\PMPHF005_JQ8Z8Z\obj\Debug\PMPHF005_JQ8Z8Z.csproj.AssemblyReference.cache
+C:\Users\rille\source\repos\PMPHF005_JQ8Z8Z\PMPHF005_JQ8Z8Z\obj\Debug\PMPHF005_JQ8Z8Z.csproj.SuggestedBindingRedirects.cache
+C:\Users\rille\source\repos\PMPHF005_JQ8Z8Z\PMPHF005_JQ8Z8Z\obj\Debug\PMPHF005_JQ8Z8Z.csproj.CoreCompileInputs.cache
+C:\Users\rille\source\repos\PMPHF005_JQ8Z8Z\PMPHF005_JQ8Z8Z\obj\Debug\PMPHF005_JQ8Z8Z.exe
+C:\Users\rille\source\repos\PMPHF005_JQ8Z8Z\PMPHF005_JQ8Z8Z\obj\Debug\PMPHF005_JQ8Z8Z.pdb
