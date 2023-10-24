@@ -85,10 +85,10 @@ namespace PMPHF005_JQ8Z8Z
             public int JNE(string DEST, string SRC1, string SRC2)
             {
                 int temp = 0;
-                if(SRC1 == "A") temp = A;
-                if(SRC1 == "B") temp = B;
-                if(SRC1 == "C") temp = C;
-                if(SRC1 == "D") temp = D;
+                if (SRC1 == "A") temp = A;
+                if (SRC1 == "B") temp = B;
+                if (SRC1 == "C") temp = C;
+                if (SRC1 == "D") temp = D;
                 if (SRC1 != "A" && SRC1 != "B" && SRC1 != "C" && SRC1 != "D") temp = int.Parse(SRC1);
 
                 if (int.Parse(SRC2) != temp)
@@ -99,27 +99,15 @@ namespace PMPHF005_JQ8Z8Z
             }
             public void OUTPUT()
             {
-                StreamWriter sw = new StreamWriter("output.txt");
-                sw.WriteLine("{0},{1},{2},{3}", A, B, C, D);
-                sw.Close();
+                File.WriteAllText("output.txt", $"{A},{B},{C},{D}");
             }
         }
         static void Main(string[] args)
         {
-            StreamReader sr = new StreamReader("input.txt");
-            assembly assembly = new assembly(sr.ReadLine());
-            string[] length = File.ReadAllLines("input.txt");
-            string[] linesInOrder = new string[length.Length - 1];
-            int index = 0;
+            string[] linesInOrder = File.ReadAllLines("input.txt");
+            assembly assembly = new assembly(linesInOrder[0]);
 
-            while (!sr.EndOfStream)
-            {
-                linesInOrder[index] = sr.ReadLine();
-                index++;
-            }
-            sr.Close();
-
-            int i = 0;
+            int i = 1;
             for (; i < linesInOrder.Length; i++)
             {
                 if (linesInOrder[i].Split(' ')[0] == "MOV")
@@ -137,7 +125,7 @@ namespace PMPHF005_JQ8Z8Z
                 if (linesInOrder[i].Split(' ')[0] == "JNE")
                 {
                     int temp = assembly.JNE(linesInOrder[i].Split(' ')[1], linesInOrder[i].Split(' ')[2], linesInOrder[i].Split(' ')[3]);
-                    if (temp != -1) i = temp - 1;
+                    if (temp != -1) i = temp;
                 }
             }
             assembly.OUTPUT();
