@@ -29,11 +29,14 @@ namespace PMPHF005_JQ8Z8Z
             public void MOV(string DEST, string SRC)
             {
                 int temp = 0;
-                if (SRC == "A") temp = A;
-                if (SRC == "B") temp = B;
-                if (SRC == "C") temp = C;
-                if (SRC == "D") temp = D;
                 if (SRC != "A" && SRC != "B" && SRC != "C" && SRC != "D") temp = int.Parse(SRC);
+                else
+                {
+                    if (SRC == "A") temp = A;
+                    if (SRC == "B") temp = B;
+                    if (SRC == "C") temp = C;
+                    if (SRC == "D") temp = D;
+                }
 
                 if (DEST == "A") A = temp;
                 if (DEST == "B") B = temp;
@@ -43,19 +46,25 @@ namespace PMPHF005_JQ8Z8Z
             public void ADD(string DEST, string SRC1, string SRC2)
             {
                 int temp1 = 0;
-                if (SRC1 == "A") temp1 = A;
-                if (SRC1 == "B") temp1 = B;
-                if (SRC1 == "C") temp1 = C;
-                if (SRC1 == "D") temp1 = D;
                 if (SRC1 != "A" && SRC1 != "B" && SRC1 != "C" && SRC1 != "D") temp1 = int.Parse(SRC1);
-
+                else
+                {
+                    if (SRC1 == "A") temp1 = A;
+                    if (SRC1 == "B") temp1 = B;
+                    if (SRC1 == "C") temp1 = C;
+                    if (SRC1 == "D") temp1 = D;
+                }
+                
                 int temp2 = 0;
-                if (SRC2 == "A") temp2 = A;
-                if (SRC2 == "B") temp2 = B;
-                if (SRC2 == "C") temp2 = C;
-                if (SRC2 == "D") temp2 = D;
                 if (SRC2 != "A" && SRC2 != "B" && SRC2 != "C" && SRC2 != "D") temp2 = int.Parse(SRC2);
-
+                else
+                {
+                    if (SRC2 == "A") temp2 = A;
+                    if (SRC2 == "B") temp2 = B;
+                    if (SRC2 == "C") temp2 = C;
+                    if (SRC2 == "D") temp2 = D;
+                }
+               
                 if (DEST == "A") A = temp1 + temp2;
                 if (DEST == "B") B = temp1 + temp2;
                 if (DEST == "C") C = temp1 + temp2;
@@ -64,18 +73,24 @@ namespace PMPHF005_JQ8Z8Z
             public void SUB(string DEST, string SRC1, string SRC2)
             {
                 int temp1 = 0;
-                if (SRC1 == "A") temp1 = A;
-                if (SRC1 == "B") temp1 = B;
-                if (SRC1 == "C") temp1 = C;
-                if (SRC1 == "D") temp1 = D;
                 if (SRC1 != "A" && SRC1 != "B" && SRC1 != "C" && SRC1 != "D") temp1 = int.Parse(SRC1);
+                else
+                {
+                    if (SRC1 == "A") temp1 = A;
+                    if (SRC1 == "B") temp1 = B;
+                    if (SRC1 == "C") temp1 = C;
+                    if (SRC1 == "D") temp1 = D;
+                }
 
                 int temp2 = 0;
-                if (SRC2 == "A") temp2 = A;
-                if (SRC2 == "B") temp2 = B;
-                if (SRC2 == "C") temp2 = C;
-                if (SRC2 == "D") temp2 = D;
                 if (SRC2 != "A" && SRC2 != "B" && SRC2 != "C" && SRC2 != "D") temp2 = int.Parse(SRC2);
+                else
+                {
+                    if (SRC2 == "A") temp2 = A;
+                    if (SRC2 == "B") temp2 = B;
+                    if (SRC2 == "C") temp2 = C;
+                    if (SRC2 == "D") temp2 = D;
+                }
 
                 if (DEST == "A") A = temp1 - temp2;
                 if (DEST == "B") B = temp1 - temp2;
@@ -85,11 +100,14 @@ namespace PMPHF005_JQ8Z8Z
             public int JNE(string DEST, string SRC1, string SRC2)
             {
                 int temp = 0;
-                if (SRC1 == "A") temp = A;
-                if (SRC1 == "B") temp = B;
-                if (SRC1 == "C") temp = C;
-                if (SRC1 == "D") temp = D;
                 if (SRC1 != "A" && SRC1 != "B" && SRC1 != "C" && SRC1 != "D") temp = int.Parse(SRC1);
+                else
+                {
+                    if (SRC1 == "A") temp = A;
+                    if (SRC1 == "B") temp = B;
+                    if (SRC1 == "C") temp = C;
+                    if (SRC1 == "D") temp = D;
+                }
 
                 if (int.Parse(SRC2) != temp)
                 {
